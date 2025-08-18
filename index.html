@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Container in AR</title>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</head>
+<style>
+  model-viewer {
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+  }
+</style>
+<body>
+  <model-viewer
+      src="buero-container.glb"
+      ios-src="buero-container.usdz"
+      ar
+      ar-modes="webxr scene-viewer quick-look"
+      camera-controls
+      auto-rotate
+      alt="3D-Modell eines Bürocontainers">
+  </model-viewer>
+</body>
+</html>
